@@ -13,12 +13,12 @@
 - 数据报表项目
 
   - [数据报表项目指南](report/guide.md)
-    - [项目创建详细](report/001.md)
-  - [静态页面开发阶段](helpers.md)
-    - [核心指标]()
-    - [销售业绩]()
-    - [区域排名]()
-    - [分类排名]()
+    - [项目创建](report/001.md)
+    - 静态页面开发阶段
+      - [核心指标](report/002.md)
+      - [销售业绩]()
+      - [区域排名]()
+      - [分类排名]()
   - [Vue compatibility](vue.md)
   - [CDN](cdn.md)
   - [Offline Mode(PWA)](pwa.md)

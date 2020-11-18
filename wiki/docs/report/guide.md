@@ -1,5 +1,5 @@
-# 数据报表项目指南
-## 项目创建  [GO ![跳转](../_images/share.svg ':size=20')](report/001.md)
+# 数据报表项目指南<!-- {docsify-ignore-all} -->
+## [项目创建![跳转](../_images/share.svg ':size=20')](report/001.md) 
 * 安装 vue-cli
 * 初始化项目
 * 安装 vue-router
