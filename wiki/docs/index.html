@@ -19,9 +19,20 @@
         maxLevel: 6, // 设置最大显示目录层级
         subMaxLevel: 3, // 子标题可显示层级，显示三层子标题
         auto2top: true, // 打开页面自动滚动到顶部
+        copyCode: {
+            buttonText : '复制代码',
+            errorText  : 'Error',
+            successText: '复制成功'
+        }
     }
 </script>
 <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
 <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/zoom-image.min.js"></script>
+
+<!-- 复制代码功能 -->
+<script src="//cdn.jsdelivr.net/npm/docsify-copy-code"></script>
+
+<script crossorigin="anonymous" integrity="sha512-odXFR6jGqGLJay2LHI5hit0IEfyxJ2UexST/qvnljBPrbXMwU44CoVddZjD9EsrtS6bMOoz8lC2yU0nhyh9yyg==" src="//lib.baomitu.com/echarts/5.0.0/echarts.common.js"></script>
+
 </body>
 </html>

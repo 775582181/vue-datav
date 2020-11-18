@@ -12,12 +12,12 @@
         </el-card>
       </el-col>
       <el-col :span="6">
-        <el-card shadow="always">
+        <el-card shadow="hover">
           <today-users/>
         </el-card>
       </el-col>
       <el-col :span="6">
-        <el-card shadow="always">
+        <el-card shadow="hover">
           <total-users/>
         </el-card>
       </el-col>
