@@ -1,1 +1,0 @@
-drop if exists table test;
