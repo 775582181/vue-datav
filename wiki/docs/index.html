@@ -11,6 +11,17 @@
 </head>
 <body>
 <div id="app"></div>
+<style>
+    .custom-block .details {
+        display: block;
+        position: relative;
+        border-radius: 2px;
+        margin: 1.6em 0;
+        padding: 1.6em;
+        background-color: #eee;
+    }
+</style>
+
 <script>
     window.$docsify = {
         name: '数据可视化', // 文档名，左上角
@@ -20,19 +31,23 @@
         subMaxLevel: 3, // 子标题可显示层级，显示三层子标题
         auto2top: true, // 打开页面自动滚动到顶部
         copyCode: {
-            buttonText : '复制代码',
-            errorText  : 'Error',
+            buttonText: '复制代码',
+            errorText: 'Error',
             successText: '复制成功'
         }
     }
 </script>
+
+
 <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
 <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/zoom-image.min.js"></script>
 
 <!-- 复制代码功能 -->
 <script src="//cdn.jsdelivr.net/npm/docsify-copy-code"></script>
 
-<script crossorigin="anonymous" integrity="sha512-odXFR6jGqGLJay2LHI5hit0IEfyxJ2UexST/qvnljBPrbXMwU44CoVddZjD9EsrtS6bMOoz8lC2yU0nhyh9yyg==" src="//lib.baomitu.com/echarts/5.0.0/echarts.common.js"></script>
+<script crossorigin="anonymous"
+        integrity="sha512-odXFR6jGqGLJay2LHI5hit0IEfyxJ2UexST/qvnljBPrbXMwU44CoVddZjD9EsrtS6bMOoz8lC2yU0nhyh9yyg=="
+        src="//lib.baomitu.com/echarts/5.0.0/echarts.common.js"></script>
 
 </body>
 </html>
