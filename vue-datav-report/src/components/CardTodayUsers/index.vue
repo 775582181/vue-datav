@@ -4,30 +4,32 @@
     value="88,632"
   >
     <template>
-      <div id="today-users-chart" :style="{width:'100%',height:'100%'}"/>
+      <vue-chart :options="getOptions()"></vue-chart>
+      <!--      <div id="today-users-chart" :style="{width:'100%',height:'100%'}"/>-->
     </template>
     <template v-slot:footer>
       <span>退货率 </span>
-      <span class="emphasis">7.88%</span>
+      <span class="emphasis">7.88%111</span>
     </template>
   </card-common>
 </template>
 
 <script>
-  import commonCardMixin from '../../mixins/commonCardMixin'
+import commonCardMixin from '../../mixins/commonCardMixin'
 
-  export default {
-    mixins: [commonCardMixin],
-    mounted () {
-      const chartDom = document.getElementById('today-users-chart')
-      const chart = this.$echarts.init(chartDom)
-      chart.setOption({
+export default {
+  mixins: [commonCardMixin],
+  mounted() {
+  },
+  methods: {
+    getOptions: () => {
+      return {
         color: ['#3398DB'],
         xAxis: {
           type: 'category',
           show: false,
           data: ['00:00', '01:00', '02:00', '03:00', '04:00', '05:00', '06:00', '07:00', '08:00', '09:00', '10:00', '11:00', '12:00', '13:00'],
-          barWidth: '60%'
+          barWidth: '60%' // 设置柱宽
         },
         yAxis: {
           show: false
@@ -42,9 +44,10 @@
           left: 0,
           right: 0
         }
-      })
+      }
     }
   }
+}
 </script>
 
 <style scoped>

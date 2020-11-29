@@ -3,7 +3,10 @@ module.exports = {
     description: '这个描述在哪',
     port: '7777',
     head: [
-        ['link', {rel: 'icon', href: '/logo.jpg'}]
+        ['link', {rel: 'icon', href: '/logo.jpg'}],
+        ['script', {charset: 'utf-8', src: '/js/echarts.js'}],
+        // ['script', {charset: 'utf-8', src: 'https://cdn.jsdelivr.net/npm/echarts@4.1.0/dist/echarts.js'}],
+        // ['script', {charset: 'utf-8', src: 'https://cdn.jsdelivr.net/npm/vue-echarts@4.0.2'}],
     ],
     themeConfig: {
         logo: '/logo.jpg',

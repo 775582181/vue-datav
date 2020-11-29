@@ -3,7 +3,9 @@
     title="累计订单量"
     value="2,123,2233">
     <template>
-      <div id="total-order-chart" :style="{width:'100%',height:'100%'}"/>
+      <vue-chart
+        :options="getOptions()"
+      />
     </template>
 
     <template v-slot:footer>
@@ -14,14 +16,15 @@
 </template>
 
 <script>
-  import commonCardMixin from '../../mixins/commonCardMixin'
+import commonCardMixin from '../../mixins/commonCardMixin'
 
-  export default {
-    mixins: [commonCardMixin],
-    mounted () {
-      const chartDom = document.getElementById('total-order-chart')
-      const chart = this.$echarts.init(chartDom)
-      chart.setOption({
+export default {
+  mixins: [commonCardMixin],
+  mounted() {
+  },
+  methods: {
+    getOptions: () => {
+      return {
         xAxis: {
           type: 'category', // 设置折线图
           show: false,
@@ -51,9 +54,10 @@
           right: 0
         }
 
-      })
+      }
     }
   }
+}
 </script>
 
 <style scoped>
